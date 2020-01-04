@@ -33,7 +33,6 @@ public class ConditionalConfig {
     //演示Condition接口中ConditionContext可以拿到的Bean的属性
     @Bean
     @Scope(WebApplicationContext.SCOPE_SESSION)
-    @Sweet
     public DataSource myDataSource() {
         OracleDataSource source = new OracleDataSource();
         return source;
