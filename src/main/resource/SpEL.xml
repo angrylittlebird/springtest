@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <bean id="configProperties" class="org.springframework.beans.factory.config.PropertiesFactoryBean">
+        <property name="locations">
+            <list>
+                <value>classpath:app.properties</value>
+            </list>
+        </property>
+    </bean>
+
+
+    <bean id="person" class="soundsystem.Person">
+        <property name="name" value="#{configProperties['person.name']}"/>
+        <!--要在SpEL中访问 类作用域 的方法和常量的话，要依赖T()这个关键的运算符-->
+        <property name="age" value="#{T(java.lang.Math).PI}"/>
+        <!--configProperties['person.gender'] 存在则使用当前存在的值，不存在则用:后面的值-->
+        <property name="gender" value="#{configProperties['person.gender']?:true}"/>
+    </bean>
+
+</beans>

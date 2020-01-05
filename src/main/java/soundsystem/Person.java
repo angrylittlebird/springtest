@@ -8,6 +8,7 @@ package soundsystem;
 public class Person {
     private String name;
     private int age;
+    private boolean gender;
 
     public String getName() {
         return name;
@@ -23,5 +24,13 @@ public class Person {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    public boolean isGender() {
+        return gender;
+    }
+
+    public void setGender(boolean gender) {
+        this.gender = gender;
     }
 }

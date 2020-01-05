@@ -9,7 +9,7 @@ import org.springframework.core.env.Environment;
 /**
  * @Author: ZHANG
  * @Date: 2020/1/4
- * @Description: 演示属性源文件会加载到Spring的Environment中，以及Environment中用例
+ * @Description: 演示 属性文件会加载到Spring的Environment中，以及Environment中用例
  */
 @Configuration
 @PropertySource("classpath:app.properties") //这个属性文件会加载到Spring的Environment中
