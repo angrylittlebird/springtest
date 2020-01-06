@@ -45,6 +45,19 @@
           <version>${spring.version}</version>
       </dependency>
 
+      <dependency>
+          <groupId>org.springframework</groupId>
+          <artifactId>spring-webmvc</artifactId>
+          <version>${spring.version}</version>
+      </dependency>
+
+      <dependency>
+          <groupId>javax.servlet</groupId>
+          <artifactId>javax.servlet-api</artifactId>
+          <version>3.1.0</version>
+          <scope>provided</scope>
+      </dependency>
+
       <!-- https://mvnrepository.com/artifact/com.github.stefanbirkner/system-rules -->
       <!-- 测试 System.out.print 用-->
       <dependency>
