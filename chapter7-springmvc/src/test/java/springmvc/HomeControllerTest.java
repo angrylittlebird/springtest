@@ -1,13 +1,11 @@
-package springmvc.web;
+package springmvc;
 
 import org.junit.Test;
 import org.springframework.test.web.servlet.MockMvc;
-import org.springframework.test.web.servlet.RequestBuilder;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
-
-import static org.junit.Assert.*;
+import web.HomeController;
 
 /**
  * @Author: ZHANG
@@ -22,5 +20,13 @@ public class HomeControllerTest {
         MockMvc mockMvc = MockMvcBuilders.standaloneSetup(homeController).build();
         mockMvc.perform(MockMvcRequestBuilders.get("/"))
                 .andExpect(MockMvcResultMatchers.view().name("home"));
+    }
+
+    @Test
+    public void getUser() throws Exception {
+        HomeController homeController = new HomeController();
+        MockMvc mockMvc = MockMvcBuilders.standaloneSetup(homeController).build();
+        mockMvc.perform(MockMvcRequestBuilders.get("/show/aadxa"))
+                .andExpect(MockMvcResultMatchers.view().name("aaaa"));
     }
 }

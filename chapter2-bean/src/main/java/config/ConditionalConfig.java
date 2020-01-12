@@ -2,7 +2,6 @@ package config;
 
 import config.condition.ConditionDemo;
 import config.condition.DataSourceCondition;
-import config.qualiifer.Sweet;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Conditional;
 import org.springframework.context.annotation.Configuration;

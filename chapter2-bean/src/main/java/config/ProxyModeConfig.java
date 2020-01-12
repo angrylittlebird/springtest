@@ -5,10 +5,10 @@
 //import org.springframework.context.annotation.Scope;
 //import org.springframework.context.annotation.ScopedProxyMode;
 //import org.springframework.web.context.WebApplicationContext;
-//import soundsystem.CdPlayer;
-//import soundsystem.SgtPeppers;
-//import soundsystem.interfac.CompactDisc;
-//import soundsystem.interfac.MediaPlayer;
+//import CdPlayer;
+//import SgtPeppers;
+//import CompactDisc;
+//import MediaPlayer;
 //
 ///**
 // * @Author: ZHANG

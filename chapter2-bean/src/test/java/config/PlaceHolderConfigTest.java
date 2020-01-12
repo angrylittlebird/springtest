@@ -8,8 +8,6 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import soundsystem.Person;
 
-import static org.junit.Assert.*;
-
 /**
  * @Author: ZHANG
  * @Date: 2020/1/5

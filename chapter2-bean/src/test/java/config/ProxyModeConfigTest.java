@@ -6,9 +6,9 @@
 //import org.springframework.beans.factory.annotation.Autowired;
 //import org.springframework.test.context.ContextConfiguration;
 //import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
-//import soundsystem.CdPlayer;
-//import soundsystem.interfac.CompactDisc;
-//import soundsystem.interfac.MediaPlayer;
+//import CdPlayer;
+//import CompactDisc;
+//import MediaPlayer;
 //
 //import static org.junit.Assert.*;
 //
